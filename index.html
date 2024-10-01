@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Preview and Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Preview and Editor</h1>
+        <input type="file" id="file-input" accept=".pdf">
+        <div id="pdf-viewer"></div>
+        <div id="page-controls" class="controls hidden">
+            <h3>Page Selection and Square Color</h3>
+            <div id="bulk-selection">
+                <label>
+                    <input type="checkbox" id="select-all"> Select All Pages
+                </label>
+                <label>
+                    <input type="checkbox" id="select-middle"> Select Middle Pages
+                </label>
+            </div>
+            <div id="page-checkboxes"></div>
+            <div>
+                <label for="square-color">Square Color:</label>
+                <select id="square-color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pdf-page {
+    margin: 10px;
+    position: relative;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-number {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.square {
+    position: absolute;
+    cursor: move;
+    opacity: 0.5;
+}
+
+.square-resizer {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    cursor: se-resize;
+}
+
+.controls {
+    background-color: burlywood;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#page-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#bulk-selection {
+    margin-bottom: 10px;
+}
+
+#bulk-selection label {
+    margin-right: 15px;
+}
