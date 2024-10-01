@@ -1,2 +1,2 @@
-# PDF-Square
-makes a square on pdf
+# Test app 
+will replace square with image in the future
